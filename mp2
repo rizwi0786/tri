@@ -1,0 +1,36 @@
+
+#include <stdio.h>
+
+int main()
+{
+   char class;
+   int n;
+   printf("\n Enter first letter of class of student and no of sub he faild");//first==F,second ==s,faild==f
+   scanf("%c %d", &class, &n);
+   switch(class)
+   {
+       case 'F':
+         if(n>3)
+         {
+             printf("\n student does not get any grace mark :");
+         }
+         else
+            printf("\n student  get  grace of 5 mark per subject :");
+        break;
+        case 's':
+          if(n>2)
+          {
+              printf("\n student does not get any grace mark :");
+          }
+          else
+              printf("\n student get grace of 4 mark per subject :");
+        break;
+        case 'f':
+           if(n>1)
+              printf("\n student does not get any grace mark :");
+           else
+              printf("\n student  get  of 5 mark per subject :");
+   }
+
+    return 0;
+}
